@@ -1,38 +1,82 @@
-.App {
+body {
+  background: rgb(230, 230, 230);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background: transparent;
+  max-width: 600px;
+  width: 90%;
+  height: 500px;
+  margin: 30px auto;
+}
+
+.clock {
+  width: 100%;
+  background: #fff;
+  margin: 30px auto;
+  position: relative;
+}
+
+
+.stopwatch {
+  padding: 60px 0px;
   text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.stopwatch span{
+  background:#18454a;
+  color: #fff;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stopwatch .stopwatch-btn {
+  background: #fff;
+  margin-top: 30px;
+  margin-left: 5px;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 150px;
+  transition: background 1s;
+  cursor: pointer;
+}
+.stopwatch .stopwatch-btn-red{
+  border: 2px solid #C85454;
+  color: #C85454;
+}
+.stopwatch .stopwatch-btn-yel{
+  border: 2px solid #FFC900;
+  color: #FFC900;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stopwatch .stopwatch-btn-gre{
+  border: 2px solid #72b895;
+  color: #72b895;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.stopwatch .stopwatch-btn-red:hover {
+  background: #C85454;
+  border: 2px solid #C85454;
+  color: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.stopwatch .stopwatch-btn-yel:hover {
+  background: #FFC900;
+  border: 2px solid #FFC900;
+  color: #fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stopwatch .stopwatch-btn-gre:hover {
+  background: #72b895;
+  border: 2px solid #72b895;
+  color: #fff;
 }
